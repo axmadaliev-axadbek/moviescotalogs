@@ -1,0 +1,118 @@
+.hero{
+    min-height: 100vh;
+    max-height: fit-content;
+    background: #3D3D3D;
+    color: #E6E6E6;
+    z-index: -1;
+    padding-top: 72px;
+    // padding-bottom: 184px;
+    position: relative;
+    
+}
+.watch-play{
+    background: linear-gradient(180deg, rgba(48,48,48,1) 1%, rgba(36,36,36,1) 24%, rgba(18,18,18,1) 73%);  
+    width: 100%;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .playLink{
+        position: absolute;
+        top: 40%;
+        left: 45%;
+    }
+    & img {
+        margin: auto;
+    }
+    &__title {
+        position: absolute;
+        left: 41px;
+        bottom: 115px;
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+    }
+    &__desc{
+        width: 470px;
+        position: absolute;
+        left: 41px;
+        bottom: 35px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #E6E6E6;
+    }
+}
+.episode{
+    // margin: 10px;
+    width: 410px;
+    height: 176px;
+    background-color: #1E1E1E;
+    display: flex;
+    
+    &__play{
+        width: 160px;
+        height: 176px;
+        background: #525252;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        & img{
+            margin: auto;
+            width: 40px;
+            height: 40px;
+        }
+        .episode__play__Start{
+            width: 160px;
+            height: 100%;
+
+        }
+        .episode__play__playLink{
+            position: absolute;
+            top: 40%;
+            left: 38%;
+            z-index: 11111;
+        }
+    }
+    &__info{
+        width: 244px;
+        padding: 12px 5px;
+        & h2 {
+            color: white;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 5px 0;
+        }
+        & h4 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+.watch {
+    position: relative;
+    .episodes-div{
+        width: 100%;
+        position: absolute;
+        bottom: -260px;
+        left: 0;
+        justify-content: space-between;
+    }
+}
+.black{
+    position: relative;
+    bottom: 0;
+    background: #1E1E1E;
+    height: 190px;
+    width: 100%;
+    margin-top: 170px;
+    z-index: -111;
+}
+.filmStart{
+    // z-index: -11111;
+    width: 100%;
+    height: 100%;
+}
+
